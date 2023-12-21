@@ -18,9 +18,9 @@ class User extends Authenticatable
         'gender',
         'occupation'
     ];
-    
-    public function bookings()
+
+    public function reservations()
     {
-        return $this->hasMany(Booking::class);
+        return $this->hasMany(Reservation::class);
     }
 }
